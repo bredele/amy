@@ -11,5 +11,6 @@ amy
  * Loose coupling sandbox (signal + logger + router)
  * Loader condition
  * Router module
- 
+ * Run in isolation (add iframe encapsulation)
+
 ---

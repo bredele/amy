@@ -1,16 +1,16 @@
-amy
-===
 
-> Amy.js is a framework for creating scalable JavaScript architecture with event driven components.
+# amy
 
-## Why Amy?
+  commonjs core engine
 
+## Installation
 
-## Todo
- * Adapt to async require.js (>2.x) with promesses
- * Loose coupling sandbox (signal + logger + router)
- * Loader condition
- * Router module
- * Run in isolation (add iframe encapsulation)
+    $ component install bredele/amy
 
----
+## API
+
+   
+
+## License
+
+  MIT

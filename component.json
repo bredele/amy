@@ -6,7 +6,8 @@
   "keywords": [],
   "dependencies": {
     "bredele/sandbox": "*",
-    "bredele/loader": "*"
+    "bredele/loader": "*",
+    "visionmedia/debug": "*"
   },
   "development": {},
   "license": "MIT",

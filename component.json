@@ -1,0 +1,17 @@
+{
+  "name": "amy",
+  "repo": "bredele/amy",
+  "description": "commonjs core engine",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "bredele/sandbox": "*",
+    "bredele/loader": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

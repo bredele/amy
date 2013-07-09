@@ -31,7 +31,7 @@ function Amy() {
 
 Amy.prototype.use = function(name) {
   //pass others params
-  loader.use(name, new Sandbox(name));
+  this.loader.use(name, new Sandbox(name));
   debug('%s package loaded', name);
   return this;
 };

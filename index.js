@@ -1,4 +1,5 @@
 var debug = require('debug')('amy')
+  , Sandbox = require('sandbox')
   , toArray = require('toarray');
 
 

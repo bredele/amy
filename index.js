@@ -17,8 +17,7 @@ module.exports = Amy;
  */
 
 function Amy(loader) {
-  console.log(this);
-  this.loader = new Loader(this.require);
+  this.loader = new Loader(loader);
 }
 
 

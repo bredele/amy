@@ -16,8 +16,8 @@ module.exports = Amy;
  * @api public
  */
 
-function Amy() {
-  this.loader = new Loader(require);
+function Amy(loader) {
+  this.loader = new Loader(loader);
 }
 
 

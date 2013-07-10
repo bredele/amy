@@ -31,6 +31,7 @@ function Amy(loader) {
 Amy.prototype.use = function(name) {
   var mod = this.loader(name);
   if(typeof mod === 'function'){
+    //may be try to modify toarray
     mod.apply(null, [new Sandbox(name)].concat(toArray(arguments, 1)));
   }
   debug('%s package loaded', name);

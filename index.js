@@ -31,13 +31,10 @@ function Amy(loader) {
 Amy.prototype.use = function(name) {
   var mod = this.loader(name);
   if(typeof mod === 'function'){
-    mod.apply(null, toArray(arguments, 1));
+    mod.apply(null, [new Sandbox(name)].concat(toArray(arguments, 1)));
   }
   debug('%s package loaded', name);
   return this;
-
-  // this.loader.use(name, new Sandbox(name));
-
 };
 
 Amy.prototype.async = function() {

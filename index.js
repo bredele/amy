@@ -1,6 +1,5 @@
-var Loader = require('loader')
-  , debug = require('debug')('amy')
-  , Sandbox = require('sandbox');
+var debug = require('debug')('amy')
+  , toArray = require('toarray');
 
 
 /**
@@ -17,7 +16,7 @@ module.exports = Amy;
  */
 
 function Amy(loader) {
-  this.loader = new Loader(loader);
+  this.loader = loader;
 }
 
 
@@ -30,15 +29,24 @@ function Amy(loader) {
  */
 
 Amy.prototype.use = function(name) {
-  //pass others params
-  this.loader.use(name, new Sandbox(name));
+  var mod = this.loader(name);
+  if(typeof mod === 'function'){
+    mod.apply(null, toArray(arguments, 1));
+  }
   debug('%s package loaded', name);
   return this;
+
+  // this.loader.use(name, new Sandbox(name));
+
+};
+
+Amy.prototype.async = function() {
+  // body...
 };
 
 
 /**
- * Load packag
+ * Load packages
  * @param  {[type]} package [description]
  * @return {[type]}         [description]
  *

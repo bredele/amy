@@ -5,9 +5,8 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "bredele/sandbox": "*",
-    "bredele/loader": "*",
-    "visionmedia/debug": "*"
+    "visionmedia/debug": "*",
+    "bredele/toarray": "*"
   },
   "development": {},
   "license": "MIT",
